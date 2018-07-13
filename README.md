@@ -10,7 +10,10 @@
 
 ![cubic formula](cubic_formula.png)
 
+![cubic formula integral](cubic_formula_int.png)
+
 ![cubic graph](cubic.png)
+
 
 ## License
 

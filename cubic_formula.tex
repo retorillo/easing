@@ -2,11 +2,17 @@
   11pt,
   border=2,
   convert={
-    density=150,
+    density=150 -alpha off,
     outext=.png
   },
 ]{standalone}
+\usepackage{amsmath}
 \begin{document}
-  $f(x) = 4k(\frac{x}{D})^{3}$,
-  $g(x) = k\{4(\frac{x}{D} - 1)^{3} + 1\}$
+$
+  \begin{cases}
+    \displaystyle f(x) = 4k(\frac{x}{D})^{3} & (0 \leq x \leq \frac{D}{2})
+    \\
+    \displaystyle g(x) = k\{4(\frac{x}{D} - 1)^{3} + 1\} & (\frac{D}{2} \leq x \leq D)
+  \end{cases}
+$
 \end{document}

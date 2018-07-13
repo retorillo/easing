@@ -1,0 +1,18 @@
+\documentclass[
+  11pt,
+  border=2,
+  convert={
+    density=150 -alpha off,
+    outext=.png
+  },
+]{standalone}
+\usepackage{amsmath}
+\begin{document}
+$
+  \begin{cases}
+    \displaystyle \int_0^x f(x) dx = k\left(\frac{x}{D}\right)^3 & (0 \leq x \leq \frac{D}{2})
+    \\
+    \displaystyle \int_0^x g(x) dx = \frac{x^4}{D^3} - \frac{4x^3}{D^2} + \frac{6x^2}{D} - 3x + \frac{1}{2}  & (\frac{D}{2} \leq x \leq D)
+  \end{cases}
+$
+\end{document}
