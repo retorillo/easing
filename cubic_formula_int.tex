@@ -2,7 +2,7 @@
   11pt,
   border=2,
   convert={
-    density=150 -alpha off,
+    density=100 -alpha remove,
     outext=.png
   },
 ]{standalone}
@@ -10,9 +10,11 @@
 \begin{document}
 $
   \begin{cases}
-    \displaystyle \int_0^x f(x) dx = k\left(\frac{x}{D}\right)^3 & (0 \leq x \leq \frac{D}{2})
+    \displaystyle \int_0^x f(x) dx = k\frac{x^4}{D^3} 
+      & \left(0 \leq x \leq \frac{D}{2}\right)
     \\
-    \displaystyle \int_0^x g(x) dx = k\left\{ \frac{x^4}{D^3} - \frac{4x^3}{D^2} + \frac{6x^2}{D} - 3x + \frac{D}{2} \right\}  & (\frac{D}{2} \leq x \leq D)
+    \displaystyle \int_0^x g(x) dx = k\left( \frac{x^4}{D^3} - \frac{4x^3}{D^2} + \frac{6x^2}{D} - 3x + \frac{D}{2} \right) 
+      & \left(\frac{D}{2} \leq x \leq D\right)
   \end{cases}
 $
 \end{document}

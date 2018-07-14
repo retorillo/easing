@@ -2,7 +2,7 @@
   11pt,
   border=2,
   convert={
-    density=150 -alpha off,
+    density=100 -alpha remove,
     outext=.png
   },
 ]{standalone}
@@ -10,9 +10,11 @@
 \begin{document}
 $
   \begin{cases}
-    \displaystyle f(x) = 4k(\frac{x}{D})^{3} & (0 \leq x \leq \frac{D}{2})
+    \displaystyle f(x) = 4k\left(\frac{x}{D}\right)^{3}
+      & \left(0 \leq x \leq \frac{D}{2}\right)
     \\
-    \displaystyle g(x) = k\left\{4(\frac{x}{D} - 1)^{3} + 1\right\} & (\frac{D}{2} \leq x \leq D)
+    \displaystyle g(x) = k\left\{4\left(\frac{x}{D} - 1\right)^{3} + 1\right\}
+      & \left(\frac{D}{2} \leq x \leq D\right)
   \end{cases}
 $
 \end{document}
