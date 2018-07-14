@@ -1,4 +1,4 @@
-set terminal png medium size 480,240
+set terminal png large size 480,240
 set output 'cubic.png'
 k=1.0
 D=1.0
