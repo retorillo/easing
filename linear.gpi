@@ -1,0 +1,17 @@
+set terminal pngcairo size 480,240 font "Courier, 8"
+set output 'linear.png'
+set tics font "Courier, 7"
+set key font "Courier, 8"
+set grid
+set xtics 0.5 nomirror offset -0.3, 0.2
+set ytics 0.5 nomirror offset 0, 0
+set lmargin 4.0
+set bmargin 1.5
+set rmargin 2.0
+set tmargin 1.0
+k=1.0
+d=1.0
+e(x)=k*(x/d)
+set border 3 lw 1.5
+set key right center
+plot [0:d] e(x) lw 2
