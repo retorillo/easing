@@ -31,6 +31,8 @@ Alternatives: Formula derivation by measuring geometrically area:
 
 ![nth](nth/nth_formula.png)
 
+![nth](nth/nth_formula_int.png)
+
 ![nth](nth/nth.gif)
 
 ## License

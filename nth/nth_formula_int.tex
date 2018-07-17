@@ -1,0 +1,20 @@
+\documentclass[
+  11pt,
+  border=2,
+  convert={
+    density=100 -alpha remove,
+    outext=.png
+  },
+]{standalone}
+\usepackage{amsmath}
+\begin{document}
+$
+  \displaystyle \int_0^x e(x) dx = \begin{cases}
+    \displaystyle F(x) = \frac{k2^{(n-1)}x^{(n+1)}}{(n+1)D^n}
+      & \left(0 \leq x \leq \frac{D}{2}\right)
+    \\
+    \displaystyle k\left(x - \frac{D}{2}\right) + F(D-x)
+      & \left(\frac{D}{2} \leq x \leq D\right)
+  \end{cases}
+$
+\end{document}
