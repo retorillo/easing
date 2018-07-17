@@ -1,0 +1,21 @@
+\documentclass[
+  11pt,
+  border=2,
+  convert={
+    density=100 -alpha remove,
+    outext=.png
+  },
+]{standalone}
+\usepackage{amsmath}
+\begin{document}
+\begin{tabular}{ r c l }
+  $\displaystyle \int_0^x e(x) dx$ & $=$ & $\begin{cases}
+      F(x) & (0 \leq x \leq \frac{D}{2}) \\
+      G(x) & (\frac{D}{2} \leq x \leq D)
+    \end{cases}$\\
+  $\displaystyle F(x)$ & $=$ & $\displaystyle k\frac{x^4}{D^3}$ \\
+  $\displaystyle G(x)$ & $=$ & $\displaystyle k\left(x-\frac{D}{2}\right) - \left\{ F\left(\frac{D}{2}\right) - F(D-x) \right\} + F\left(\frac{D}{2}\right)$ \\
+         & $=$ & $\displaystyle k\left(x-\frac{D}{2}\right) + F(D-x)$ \\
+         & $=$ & $\displaystyle k\left\{\frac{(x-D)^4}{D^3} + x - \frac{D}{2}\right\}$
+\end{tabular}
+\end{document}

@@ -22,6 +22,9 @@
 
 ![cubic graph](cubic.png)
 
+Alternatives: Formula derivation by measuring geometrically area:
+
+![cubic formula integral alt](cubic_formula_int_alt.png)
 
 ## License
 
