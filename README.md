@@ -27,6 +27,12 @@ Alternatives: Formula derivation by measuring geometrically area:
 
 ![cubic formula integral alt](cubic\cubic_formula_int_alt.png)
 
+## N-th Degree
+
+![nth](nth\nth_formula.png)
+
+![nth](nth\nth.png)
+
 ## License
 
 Authored by Retorillo

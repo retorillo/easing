@@ -1,0 +1,20 @@
+\documentclass[
+  11pt,
+  border=2,
+  convert={
+    density=100 -alpha remove,
+    outext=.png
+  },
+]{standalone}
+\usepackage{amsmath}
+\begin{document}
+$
+  e(x) = \begin{cases}
+    \displaystyle f(x) = 2^{(n-1)}k\left(\frac{x}{D}\right)^{n}
+      & \left(0 \leq x \leq \frac{D}{2}\right)
+    \\
+    \displaystyle g(x) = k - f(D-x)
+      & \left(\frac{D}{2} \leq x \leq D\right)
+  \end{cases}
+$
+\end{document}

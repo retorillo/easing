@@ -1,0 +1,24 @@
+set terminal pngcairo size 300,300 font 'Courier, 7'
+if (exist('n') == 0) n=2
+end_n=30
+D=1.0
+k=1.0
+f(x)=2**(n-1)*k*(x/D)**n
+set grid
+set xtics 0.5 nomirror
+set ytics 0.5 nomirror
+set xrange [0:D]
+set yrange [-k/2:k]
+outfile = sprintf('tmp/nth_%02d.png', n)
+labeltxt = sprintf('n=%d', n)
+unset label
+set border 3 lw 2
+set label at graph 0.1,0.1 font 'Courier, 12' labeltxt
+set key left top
+set output outfile
+plot f(x) ls 1 lw 2 title 'f(x)', \
+  f(D-x) ls 3 dt (10,10) lw 2 title 'f(D-x)', \
+  -f(D-x) ls 4 dt (10,10) lw 2 title '-f(D-x)', \
+  k-f(D-x) ls 2 lw 2 title 'k-f(D-x)'
+n = n + 1
+if (n <= end_n) reread;
